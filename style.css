@@ -1,4 +1,18 @@
 
+.common-color{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.common-text-p{
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
 .common-text{
     color: #3C354F;
     font-family: Work Sans;
@@ -144,17 +158,34 @@ nav ul{
     line-height: normal;
     margin-bottom: 5px;
 }
-.common-color{
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+/* icon section style */
+.icon-section{
+    padding: 0px 240px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
-.common-text-p{
-    color: #534C64;
+.icon-main-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 70px;
+   flex-wrap: wrap;
+   margin-top: 50px;
+   padding-top: 40px;
+   height: 307px;
+
+}
+.icon-sub-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.icon-main-container p{
+    color: #0B0223;
     font-family: Work Sans;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
+    font-weight: 600;
+    line-height: normal;
 }
