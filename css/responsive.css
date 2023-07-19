@@ -6,6 +6,7 @@
     nav{
         width: auto;
         padding: 0 50px;
+        padding-bottom: 30px;
     }
     .nav-container{
         display: flex;
@@ -22,6 +23,7 @@
     .banner-section{
         width:auto;
         padding: 0 50px;
+        padding-top: 20px;
     }
     .banner-container{
         display: flex;
@@ -64,6 +66,33 @@
     .shortcut{
         display: flex;
         flex-wrap: wrap;
+    }
+    .play-section{
+        width: auto;
+        padding: 0 50px;
+    }
+    .play-section-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .img{
+        width: 60%;
+        padding-top: 30%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .img img{
+        width: 50%;
+        
+    }
+    .img-container img{
+        width: 100%;
+    }
+    .text-container{
+        padding-bottom: 50px;
     }
 
 }
