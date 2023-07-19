@@ -55,7 +55,7 @@ nav ul{
     font-weight: 700;
     line-height: normal;
 }
-#gamer{
+.gamer{
     color: #FF42A5;
 }
 .logo-container img{
@@ -89,8 +89,11 @@ nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 700px;
 }
-    
+.banner-img{
+    width: 100%;
+}
 #goat{
     font-family: 'Work Sans', sans-serif;
     font-size: 95px;
@@ -137,14 +140,18 @@ nav ul{
 
 .online-games-section{
     padding: 0px 240px;
+
 }
 .online-games-container{
     margin-top: 80px;
 }
 .online-img-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+}
+.online-img-container img{
+    width: 100%;
 }
 .online-text-container{
     text-align: center;
@@ -163,23 +170,37 @@ nav ul{
 .icon-section{
     padding: 0px 240px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    height: 447px;
 }
 .icon-main-container{
-   display: flex;
+   /* display: flex;
    justify-content: center;
-   align-items: center;
-   gap: 70px;
+   align-items: center; */
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 50px;
    flex-wrap: wrap;
    margin-top: 50px;
    padding-top: 40px;
-   height: 307px;
-
 }
 .icon-sub-container{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    width: auto;
+    height: 80px;
+}
+.icon-sub-container:hover{
+    width: auto;
+    height: 80px;
+    border: 3px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px pink;
+    background: #FFF;
+    border-color: #F948B2;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .icon-main-container p{
     color: #0B0223;
@@ -188,4 +209,70 @@ nav ul{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+/* footer section style */
+footer{
+    height: 500px;
+    padding: 0px 240px;
+    background: #0B0223;
+    padding-top: 120px;
+}
+.shortcut{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    color: white;
+    margin-top: 60px;
+}
+.shortcut li{
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.icon{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    list-style: none;
+    gap:60px;
+    margin-top: 50px;
+}
+.icon img{
+    height: 30px;
+    width: 30px;
+}
+.privacy{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    list-style: none;
+    color: gray;
+    gap: 60px;
+    margin-top: 90px;
+}
+.privacy li{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.logo-container h1{
+    color: white;
+}
+.copyright{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 60px;
 }
