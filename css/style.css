@@ -156,8 +156,11 @@ nav ul{
 }
 .online-img-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    width: auto;
+    gap: 10px;
 }
 .online-img-container img{
     width: 100%;
@@ -173,6 +176,49 @@ nav ul{
     font-weight: 700;
     line-height: normal;
     margin-bottom: 5px;
+}
+
+/* overlay */
+.overlay-container{
+    position:relative;
+    width: 100%;
+}
+.overlay-container img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+}
+.overlay{
+    transition: .5s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color:black;
+    color: white;
+    font-size: 16px;
+    border-radius: 15px;
+}
+.overlay-container:hover .overlay{
+    opacity:0.8;
+}
+.watch{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 
@@ -306,7 +352,9 @@ footer{
 }
 .play-section .img-container{
     margin-left: 150px;
+
 }
+
 .img{
     margin-top: 10px;
     margin-right: 10px;
@@ -356,8 +404,11 @@ footer{
     align-items: center;
 
 }
+.games-section-container img{
+    width: 100%;
+}
 .games-section-container .text-container{
-    text-align: right;
+    text-align:right;
 }
 .games-section-container .text-container h1{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
