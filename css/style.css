@@ -251,6 +251,7 @@ footer{
     display: flex;
     justify-content:center;
     align-items: center;
+    flex-wrap: wrap;
     list-style: none;
     gap:60px;
     margin-top: 50px;
@@ -263,6 +264,7 @@ footer{
     display: flex;
     justify-content:center;
     align-items: center;
+    flex-wrap: wrap;
     list-style: none;
     color: gray;
     gap: 60px;
